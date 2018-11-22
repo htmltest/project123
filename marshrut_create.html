@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Найдите подходящий маршрут</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+
+        <meta name="viewport" content="width=1200" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- route -->
+            <div class="route" style="background-image:url(images/route.jpg)">
+
+                <header>
+                    <div class="container">
+
+                        <div class="logo"><a href="#"><img src="images/logo-mini.png" alt="" /></a></div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="#"><span class="header-menu-1"></span>Что посмотреть?</a></li>
+                                <li><a href="#"><span class="header-menu-2"></span>С кем поехать?</a></li>
+                                <li><a href="#"><span class="header-menu-3"></span>Где пожить?</a></li>
+                                <li><a href="#"><span class="header-menu-4"></span>Поиск гида</a></li>
+                                <li><a href="#"><span class="header-menu-5"></span>На машине</a></li>
+                                <li><a href="#"><span class="header-menu-6"></span>Авиа (auz)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-menu-user">
+                            <div class="header-menu-user-title">Профиль</div>
+                            <div class="header-menu-user-list">
+                                <ul>
+                                    <li><a href="#">Главная</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Журнал</a></li>
+                                    <li><a href="#">Паспорт</a></li>
+                                    <li><a href="#">Сообщения <span class="header-menu-user-list-notice"></span></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="windows/language.html" class="window-link"><span class="lang lang-ru"></span> Язык</a></li>
+                                    <li><a href="windows/currency.html" class="window-link"><span class="currency">₽</span> Валюта</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Выйти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- route content -->
+                <div class="route-content">
+                    <div class="container">
+
+                        <!-- route menu -->
+                        <div class="route-menu">
+                            <ul>
+                                <li><a href="#">Предложить жилье</a></li>
+                                <li class="active"><a href="#">Поиск гида</a></li>
+                                <li><a href="#">Найти попутчика</a></li>
+                                <li><a href="#">Найти занятие</a></li>
+                            </ul>
+                            <div class="route-menu-report"><a href="#">Написать отчет</a></div>
+                        </div>
+                        <!-- route menu END -->
+
+                        <!-- route container -->
+                        <div class="route-container">
+
+                            <div class="route-menu-inner">
+                                <ul>
+                                    <li><a href="#">Предложения</a></li>
+                                    <li><a href="#">Мои запросы</a></li>
+                                    <li class="active"><a href="#">Мои маршруты</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- route supply header -->
+                            <div class="route-supply-header route-catalogue-header">
+                                <div class="route-supply-header-title">
+                                    <div class="route-supply-header-title-text">Создайте новый маршрут</div>
+                                    <div class="route-supply-header-title-notice">Быстро создавайте и публикуйте свои маршруты!</div>
+                                </div>
+                                <div class="route-supply-header-form">
+                                    <form action="#" method="post">
+                                        <div class="route-supply-header-form-field-1">
+                                            <div class="route-supply-header-input"><input type="text" name="name" value="" placeholder="Введите Название маршрута" /></div>
+                                        </div>
+                                        <div class="route-supply-header-form-field-2">
+                                            <div class="route-supply-header-input"><input type="text" name="city" value="" placeholder="Город маршута" /></div>
+                                        </div>
+                                        <div class="route-supply-header-form-field-3">
+                                            <div class="route-supply-header-input"><input type="text" name="radius" value="" placeholder="Радиус" /></div>
+                                        </div>
+                                        <div class="route-supply-header-form-field-4">
+                                            <div class="route-supply-header-submit"><button type="submit">Продолжить</button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- route supply header END -->
+
+                            <!-- route supply content -->
+                            <div class="route-supply-content route-catalogue-content">
+                                <form action="#" method="post">
+
+                                    <!-- route catalogue about -->
+                                    <div class="route-catalogue-about">
+                                        <div class="route-catalogue-about-city">
+                                            <div class="route-catalogue-about-title">Информация о городе маршрута</div>
+                                            <div class="route-catalogue-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                                        </div>
+                                        <div class="route-catalogue-about-info">
+                                            <div class="route-catalogue-about-title">Cредняя стоимость отелей</div>
+                                            <div class="route-catalogue-about-hotels">
+                                                <div class="route-catalogue-about-hotel"><strong>5</strong>от 100$ до 150$/ сутки</div>
+                                                <div class="route-catalogue-about-hotel"><strong>4</strong>от 70$ до 85$/ сутки</div>
+                                                <div class="route-catalogue-about-hotel"><strong>3</strong>от 50$ до 59$/ сутки</div>
+                                            </div>
+                                            <div class="route-catalogue-about-title">Погода на неделю</div>
+                                            <div class="route-catalogue-about-days">
+                                                <div class="route-catalogue-about-day">
+                                                    <div class="route-catalogue-about-day-title">Пн</div>
+                                                    <div class="route-catalogue-about-day-value"><img src="images/route-catalogue-about-sun.png" alt="" />+4</div>
+                                                </div>
+                                                <div class="route-catalogue-about-day">
+                                                    <div class="route-catalogue-about-day-title">Вт</div>
+                                                    <div class="route-catalogue-about-day-value"><img src="images/route-catalogue-about-sun.png" alt="" />+4</div>
+                                                </div>
+                                                <div class="route-catalogue-about-day">
+                                                    <div class="route-catalogue-about-day-title">Ср</div>
+                                                    <div class="route-catalogue-about-day-value"><img src="images/route-catalogue-about-sun.png" alt="" />+4</div>
+                                                </div>
+                                                <div class="route-catalogue-about-day">
+                                                    <div class="route-catalogue-about-day-title">Чт</div>
+                                                    <div class="route-catalogue-about-day-value"><img src="images/route-catalogue-about-sun.png" alt="" />+4</div>
+                                                </div>
+                                                <div class="route-catalogue-about-day">
+                                                    <div class="route-catalogue-about-day-title">Пт</div>
+                                                    <div class="route-catalogue-about-day-value"><img src="images/route-catalogue-about-sun.png" alt="" />+4</div>
+                                                </div>
+                                                <div class="route-catalogue-about-day">
+                                                    <div class="route-catalogue-about-day-title">Сб</div>
+                                                    <div class="route-catalogue-about-day-value"><img src="images/route-catalogue-about-sun.png" alt="" />+4</div>
+                                                </div>
+                                                <div class="route-catalogue-about-day">
+                                                    <div class="route-catalogue-about-day-title">Вс</div>
+                                                    <div class="route-catalogue-about-day-value"><img src="images/route-catalogue-about-sun.png" alt="" />+4</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- route catalogue about END -->
+
+                                    <!-- route catalogue type -->
+                                    <div class="route-catalogue-type">
+                                        <div class="route-catalogue-type-item">
+                                            <label><input type="radio" name="type" value="1" checked="checked" /><span>Маршрут по достопримечательностям</span></label>
+                                        </div>
+                                        <div class="route-catalogue-type-item">
+                                            <label><input type="radio" name="type" value="2" /><span>Уникальный маршрут</span></label>
+                                        </div>
+                                        <div class="route-catalogue-type-descr">Для того чтобы построить маршрут по достопримечтельностям, достаточно выбрать их последовательность на карте или ввести список вручную.</div>
+                                        <div class="route-catalogue-type-descr">Описание уникального маршрута</div>
+                                    </div>
+                                    <!-- route catalogue type END -->
+
+                                    <!-- route catalogue places -->
+                                    <div class="route-catalogue-places">
+
+                                        <!-- route catalogue places header -->
+                                        <div class="route-catalogue-places-header">
+                                            <div class="route-catalogue-places-title">Планируемые места:</div>
+                                            <div class="route-catalogue-places-filter">
+                                                <div class="route-catalogue-places-filter-all">
+                                                    <div class="route-catalogue-places-filter-all-title">Показать все</div>
+                                                    <div class="route-catalogue-places-filter-all-list">
+                                                        <div class="route-catalogue-places-filter-all-list-inner">
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="accounting" onclick="re_search();" /><span>accounting</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="airport" onclick="re_search();" /><span>airport</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="amusement_park" onclick="re_search();" /><span>amusement_park</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="aquarium" onclick="re_search();" /><span>aquarium</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="art_gallery" onclick="re_search();" /><span>art_gallery</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="atm" onclick="re_search();" /><span>atm</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="bakery" onclick="re_search();" /><span>bakery</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="bank" onclick="re_search();" /><span>bank</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="bar" onclick="re_search();" /><span>bar</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="beauty_salon" onclick="re_search();" /><span>beauty_salon</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="bicycle_store" onclick="re_search();" /><span>bicycle_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="book_store" onclick="re_search();" /><span>book_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="bowling_alley" onclick="re_search();" /><span>bowling_alley</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="bus_station" onclick="re_search();" /><span>bus_station</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="cafe" onclick="re_search();" /><span>cafe</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="campground" onclick="re_search();" /><span>campground</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="car_dealer" onclick="re_search();" /><span>car_dealer</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="car_rental" onclick="re_search();" /><span>car_rental</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="car_repair" onclick="re_search();" /><span>car_repair</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="car_wash" onclick="re_search();" /><span>car_wash</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="casino" onclick="re_search();" /><span>casino</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="cemetery" onclick="re_search();" /><span>cemetery</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="church" onclick="re_search();" /><span>church</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="city_hall" onclick="re_search();" /><span>city_hall</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="clothing_store" onclick="re_search();" /><span>clothing_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="convenience_store" onclick="re_search();" /><span>convenience_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="courthouse" onclick="re_search();" /><span>courthouse</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="dentist" onclick="re_search();" /><span>dentist</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="department_store" onclick="re_search();" /><span>department_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="doctor" onclick="re_search();" /><span>doctor</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="electrician" onclick="re_search();" /><span>electrician</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="electronics_store" onclick="re_search();" /><span>electronics_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="embassy" onclick="re_search();" /><span>embassy</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="establishment" onclick="re_search();" /><span>establishment (устарело)</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="finance" onclick="re_search();" /><span>finance (устарело)</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="fire_station" onclick="re_search();" /><span>fire_station</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="florist" onclick="re_search();" /><span>florist</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="food" onclick="re_search();" /><span>food (устарело)</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="funeral_home" onclick="re_search();" /><span>funeral_home</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="furniture_store" onclick="re_search();" /><span>furniture_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="gas_station" onclick="re_search();" /><span>gas_station</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="general_contractor" onclick="re_search();" /><span>general_contractor (устарело)</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="grocery_or_supermarket" onclick="re_search();" /><span>grocery_or_supermarket (устарело)</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="gym" onclick="re_search();" /><span>gym</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="hair_care" onclick="re_search();" /><span>hair_care</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="hardware_store" onclick="re_search();" /><span>hardware_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="health" onclick="re_search();" /><span>health (устарело)</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="hindu_temple" onclick="re_search();" /><span>hindu_temple</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="home_goods_store" onclick="re_search();" /><span>home_goods_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="hospital" onclick="re_search();" /><span>hospital</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="insurance_agency" onclick="re_search();" /><span>insurance_agency</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="jewelry_store" onclick="re_search();" /><span>jewelry_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="laundry" onclick="re_search();" /><span>laundry</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="lawyer" onclick="re_search();" /><span>lawyer</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="library" onclick="re_search();" /><span>library</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="liquor_store" onclick="re_search();" /><span>liquor_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="local_government_office" onclick="re_search();" /><span>local_government_office</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="locksmith" onclick="re_search();" /><span>locksmith</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="lodging" onclick="re_search();" /><span>lodging</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="meal_delivery" onclick="re_search();" /><span>meal_delivery</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="meal_takeaway" onclick="re_search();" /><span>meal_takeaway</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="mosque" onclick="re_search();" /><span>mosque</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="movie_rental" onclick="re_search();" /><span>movie_rental</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="movie_theater" onclick="re_search();" /><span>movie_theater</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="moving_company" onclick="re_search();" /><span>moving_company</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="museum" onclick="re_search();" /><span>museum</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="night_club" onclick="re_search();" /><span>night_club</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="painter" onclick="re_search();" /><span>painter</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="park" onclick="re_search();" /><span>park</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="parking" onclick="re_search();" /><span>parking</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="pet_store" onclick="re_search();" /><span>pet_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="pharmacy" onclick="re_search();" /><span>pharmacy</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="physiotherapist" onclick="re_search();" /><span>physiotherapist</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="place_of_worship" onclick="re_search();" /><span>place_of_worship (устарело)</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="plumber" onclick="re_search();" /><span>plumber</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="police" onclick="re_search();" /><span>police</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="post_office" onclick="re_search();" /><span>post_office</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="real_estate_agency" onclick="re_search();" /><span>real_estate_agency</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="restaurant" onclick="re_search();" /><span>restaurant</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="roofing_contractor" onclick="re_search();" /><span>roofing_contractor</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="rv_park" onclick="re_search();" /><span>rv_park</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="school" onclick="re_search();" /><span>school</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="shoe_store" onclick="re_search();" /><span>shoe_store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="shopping_mall" onclick="re_search();" /><span>shopping_mall</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="spa" onclick="re_search();" /><span>spa</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="stadium" onclick="re_search();" /><span>stadium</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="storage" onclick="re_search();" /><span>storage</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="store" onclick="re_search();" /><span>store</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="subway_station" onclick="re_search();" /><span>subway_station</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="synagogue" onclick="re_search();" /><span>synagogue</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="taxi_stand" onclick="re_search();" /><span>taxi_stand</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="train_station" onclick="re_search();" /><span>train_station</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="transit_station" onclick="re_search();" /><span>transit_station</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="travel_agency" onclick="re_search();" /><span>travel_agency</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="university" onclick="re_search();" /><span>university</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="veterinary_care" onclick="re_search();" /><span>veterinary_care</span></label></div>
+                                                            <div class="route-catalogue-places-filter-all-list-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="zoo" onclick="re_search();" /><span>zoo</span></label></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="route-catalogue-places-filter-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="all" onclick="re_search();" /><span>Все</span></label></div>
+                                                <div class="route-catalogue-places-filter-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="food" onclick="re_search();" /><span>Еда</span></label></div>
+                                                <div class="route-catalogue-places-filter-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="art" onclick="re_search();" /><span>Искусство</span></label></div>
+                                                <div class="route-catalogue-places-filter-item"><label><input class="checkbox" id="type" type="checkbox" name="type[]" value="relax" onclick="re_search();" /><span>Отдых</span></label></div>
+                                            </div>
+                                        </div>
+                                        <!-- route catalogue places header END -->
+
+                                        <!-- route catalogue places content -->
+                                        <div class="route-catalogue-places-content">
+                                            <div class="route-catalogue-places-list" id="myroute">
+<!--                                                <div class="route-catalogue-places-page active">
+                                                    <div class="route-catalogue-places-item">
+                                                        <div class="route-catalogue-places-item-text">
+                                                            <div class="route-catalogue-places-item-text-title">1. Lorem ipsum dolor sit amet</div>
+                                                            <div class="route-catalogue-places-item-text-link"><a href="#" target="_blank"><img src="files/wiki.png" alt="" /></a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="route-catalogue-places-item">
+                                                        <div class="route-catalogue-places-item-input"><input type="text" name="places[]" value="" placeholder="Точка №1" /></div>
+                                                    </div>
+                                                    <div class="route-catalogue-places-item">
+                                                        <div class="route-catalogue-places-item-input"><input type="text" name="places[]" value="" placeholder="Точка №2" /></div>
+                                                    </div>
+                                                    <div class="route-catalogue-places-item">
+                                                        <div class="route-catalogue-places-item-input"><input type="text" name="places[]" value="" placeholder="Точка №3" /></div>
+                                                    </div>
+                                                    <div class="route-catalogue-places-item">
+                                                        <div class="route-catalogue-places-item-input"><input type="text" name="places[]" value="" placeholder="Точка №4" /></div>
+                                                    </div>
+                                                    <div class="route-catalogue-places-item">
+                                                        <div class="route-catalogue-places-item-input"><input type="text" name="places[]" value="" placeholder="Точка №5" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="route-catalogue-places-pager">
+                                                    <a href="#" class="route-catalogue-places-pager-prev"></a>
+                                                    <a href="#">1</a>
+                                                    <a href="#" class="active">2</a>
+                                                    <a href="#">3</a>
+                                                    <a href="#" class="route-catalogue-places-pager-next"></a>
+                                                </div>-->
+                                            </div>
+                                            <div class="route-catalogue-places-map">
+                                                <div id="map"></div>
+                                                <script>
+                                                    var map;
+                                                    var markersArray = [];
+                                                    var service;
+                                                    var infoWindow;
+                                                    var s_radius = 500;
+                                                    var s_type = '';
+
+                                                    function initMap() {
+                                                        var pyrmont = {lat: -33.867, lng: 151.195};
+
+                                                        map = new google.maps.Map(document.getElementById('map'), {
+                                                            center: pyrmont,
+                                                            zoom: 8
+                                                        });
+
+                                                        google.maps.event.addListener(map, 'tilesloaded', function () {
+                                                            loadMapFromCurrentBounds(map);
+                                                        });
+
+                                                        infoWindow = new google.maps.InfoWindow();
+                                                        service = new google.maps.places.PlacesService(map);
+                                                        getMyRoute();
+                                                    }
+
+                                                    function loadMapFromCurrentBounds(map) {
+                                                        var bounds = map.getBounds();
+                                                        var swPoint = bounds.getCenter();
+                                                        var swLat = swPoint.lat();
+                                                        var swLng = swPoint.lng();
+                                                        var tmp = {lat: swLat, lng: swLng};
+                                                        $("#centermap").val('lat: ' + swLat + ', lng: ' + swLng);
+
+                                                        if (s_type!="") {
+                                                            service.nearbySearch({
+                                                                location: tmp,
+                                                                radius: s_radius,
+                                                                type: s_type,
+                                                                rankby: 'distance'
+                                                            }, callback);
+                                                        } else
+                                                            deleteOverlays();
+                                                    }
+
+                                                    function callback(results, status) {
+                                                        deleteOverlays();
+                                                        if (status === google.maps.places.PlacesServiceStatus.OK) {
+                                                            for (var i = 0; i < results.length; i++) {
+                                                                createMarker(results[i]);
+                                                            }
+                                                        }
+                                                    }
+
+                                                    function createMarker(place) {
+                                                        var placeLoc = place.geometry.location;
+                                                        var marker = new google.maps.Marker({
+                                                            map: map,
+                                                            position: place.geometry.location
+                                                        });
+                                                        markersArray.push(marker);
+
+                                                        google.maps.event.addListener(marker, 'click', function() {
+                                                            service.getDetails(place, function(result, status) {
+                                                                if (status !== google.maps.places.PlacesServiceStatus.OK) {
+                                                                    console.error(status);
+                                                                    return;
+                                                                }
+                                                                console.log(result);
+                                                                infoWindow.setContent(result.name+"<a href=\"#\" onclick=\"selectpoint('"+result.place_id+"', '"+result.geometry.location+"', '"+result.name+"');infoWindow.close();return false;\">Select</a>");
+                                                                infoWindow.open(map, marker);
+                                                            });
+                                                        });
+                                                    }
+
+                                                    function deleteOverlays() {
+                                                        if (markersArray) {
+                                                            for (i in markersArray) {
+                                                                markersArray[i].setMap(null);
+                                                            }
+                                                            markersArray.length = 0;
+                                                        }
+                                                    }
+
+                                                    function re_search() {
+                                                        var selectedCheckBoxes = document.querySelectorAll('input.checkbox:checked');
+                                                        s_type = Array.from(selectedCheckBoxes).map(cb => cb.value);
+                                                        loadMapFromCurrentBounds(map);
+                                                    }
+
+                                                    function selectpoint(id, xy, name) {
+                                                        console.log(xy);
+                                                        console.log(id);
+                                                        $('#myroute').append('<div class="route-catalogue-places-item"><div class="route-catalogue-places-item-text"><div class="route-catalogue-places-item-text-title"><input class="routepoint" name="point[]" type="hidden" value="' + id + '"><input class="routepoint" name="pointxy[]" type="hidden" value="' + xy + '">' + name + '</div></div></div>');
+                                                    }
+
+                                                    function creatroute() {
+                                                        $.ajax({
+                                                            type: "POST",
+                                                            url: "/api.php",
+                                                            data: $("#addroute").serialize(),
+                                                            success: function(data) {
+                                                                if (data=="")
+                                                                    getMyRoute();
+                                                            }
+                                                        });
+                                                    }
+
+                                                    function delete_route(id) {
+                                                        var hi= confirm("Уверены что надо удалить?");
+                                                        if (hi== true) {
+                                                            $.ajax({
+                                                                type: "POST",
+                                                                url: "/api.php",
+                                                                data: { act: "deleteroute", id: id }
+                                                            });
+                                                            getMyRoute();
+                                                        }
+                                                    }
+
+                                                    function getMyRoute() {
+                                                        var MyRouteHTML="";
+                                                        $.ajax({
+                                                            type: "POST",
+                                                            url: "/api.php",
+                                                            data: { act: "GetUserRoute" },
+                                                            success: function(data) {
+                                                                var obj = jQuery.parseJSON(data);
+                                                                obj.forEach(function(item, i, obj) {
+                                                                    MyRouteHTML+="<a href=\"/cabinet/myroute/?r="+item.routeid+"\">"+item.name+"</a> ";
+                                                                    if (item.send<1)MyRouteHTML+="<a href=\"#\" onclick=\"send_route("+item.routeid+");\">send</a> ";
+                                                                    MyRouteHTML+="<a href=\"#\" onclick=\"delete_route("+item.routeid+");\">Delete</a></span></label></div>";
+                                                                });
+                                                                $("#ShowMyRoute").html(MyRouteHTML);
+                                                            }
+                                                        });
+                                                    }
+
+                                                    function send_route(id) {
+                                                        $.ajax({
+                                                            type: "POST",
+                                                            url: "/api.php",
+                                                            data: { act: "SendUserRoute", id: id },
+                                                            success: function(data) {
+                                                                getMyRoute();
+                                                            }
+                                                        });
+                                                    }
+                                                </script>
+                                                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhqQJTnJ_7qmK9RIO9Y74GilsYwR0S47I&libraries=places&callback=initMap" async defer></script>
+                                            </div>
+                                        </div>
+                                        <!-- route catalogue places content END -->
+
+                                    </div>
+                                    <!-- route catalogue places END -->
+
+                                    <!-- route catalogue ctrl -->
+                                    <div class="route-catalogue-ctrl">
+                                        <div class="route-catalogue-ctrl-time-title">Время в пути:</div>
+                                        <div class="route-catalogue-ctrl-time-walking">4 часа</div>
+                                        <div class="route-catalogue-ctrl-time-driving">2 часа</div>
+                                        <div class="route-catalogue-submit"><input type="submit" value="Закончить и опубликовать" /></div>
+                                    </div>
+                                    <!-- route catalogue ctrl END -->
+
+                                </form>
+                                <div class="route-catalogue-cancel"><a href="#">Отменить и вернуться к моим маршрутам</a></div>
+                            </div>
+                            <!-- route supply content END -->
+
+                        </div>
+                        <!-- route container END -->
+
+                    </div>
+                </div>
+                <!-- route content END -->
+
+            </div>
+            <!-- route END -->
+
+            <!-- mobile -->
+            <div class="mobile">
+                <div class="container">
+                    <div class="mobile-link"><a href="#">Перейти к мобильной версии</a></div>
+                    <div class="mobile-app">Скачайте мобильное приложение в <a href="#"><img src="images/mobile-app-googleplay.png" alt="" /> Google Play</a> и <a href="#"><img src="images/mobile-app-appstore.png" alt="" /> Appstore</a></div>
+                </div>
+            </div>
+            <!-- mobile END -->
+
+            <footer>
+                <div class="container">
+
+                    <!-- footer top -->
+                    <div class="footer-top">
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Инструменты</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Что посмотреть?</a></li>
+                                    <li><a href="#">С кем поехать?</a></li>
+                                    <li><a href="#">Где пожить?</a></li>
+                                    <li><a href="#">Поиск гида</a></li>
+                                    <li><a href="#">На машине</a></li>
+                                    <li><a href="#">Авиа (auz)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Компания</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Помощь</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Как это работает?</a></li>
+                                    <li><a href="#">Ответы на вопросы</a></li>
+                                    <li><a href="#">Служба поддержки</a></li>
+                                    <li><a href="#">Политика конфиденциальности </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Скачать приложение</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Для Android</a></li>
+                                    <li><a href="#">Для iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer-right">
+                            <div class="footer-right-title">Присоединяйтесь к нам</div>
+                            <div class="footer-social">
+                                <a href="#" target="_blank"><img src="images/footer-social-fb.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-tw.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-yt.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-rs.png" alt="" /></a>
+                            </div>
+                            <div class="footer-payment">
+                                <img src="images/footer-payment-visa.png" alt="" />
+                                <img src="images/footer-payment-mastercard.png" alt="" />
+                                <img src="images/footer-payment-mir.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer top END -->
+
+                    <!-- footer bottom -->
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-copyrights">© ООО “Название” 2018.<br /> ИНН 3486739687 ОГРН 1220698346346<br /> 105000 г. Москва, ул. Московская, д. 83</div>
+                        <div class="footer-bottom-info">Вся информация на сайте носит сугубо информационный <br /> характер и не является публичной офертой или рекламой.<br /> Все права защищены © 2018.</div>
+                        <div class="footer-bottom-developer">Дизайн разработан комнадой <a href="#" target="_blank">Web-Marketing</a>.</div>
+                    </div>
+                    <!-- footer bottom END -->
+
+                </div>
+            </footer>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

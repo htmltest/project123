@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Найдите подходящий маршрут</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+
+        <meta name="viewport" content="width=1200" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- route -->
+            <div class="route" style="background-image:url(images/route.jpg)">
+
+                <header>
+                    <div class="container">
+
+                        <div class="logo"><a href="#"><img src="images/logo-mini.png" alt="" /></a></div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="#"><span class="header-menu-1"></span>Что посмотреть?</a></li>
+                                <li><a href="#"><span class="header-menu-2"></span>С кем поехать?</a></li>
+                                <li><a href="#"><span class="header-menu-3"></span>Где пожить?</a></li>
+                                <li><a href="#"><span class="header-menu-4"></span>Поиск гида</a></li>
+                                <li><a href="#"><span class="header-menu-5"></span>На машине</a></li>
+                                <li><a href="#"><span class="header-menu-6"></span>Авиа (auz)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-menu-user">
+                            <div class="header-menu-user-title">Профиль</div>
+                            <div class="header-menu-user-list">
+                                <ul>
+                                    <li><a href="#">Главная</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Журнал</a></li>
+                                    <li><a href="#">Паспорт</a></li>
+                                    <li><a href="#">Сообщения <span class="header-menu-user-list-notice"></span></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="windows/language.html" class="window-link"><span class="lang lang-ru"></span> Язык</a></li>
+                                    <li><a href="windows/currency.html" class="window-link"><span class="currency">₽</span> Валюта</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Выйти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- route content -->
+                <div class="route-content">
+                    <div class="container">
+
+                        <!-- route menu -->
+                        <div class="route-menu">
+                            <ul>
+                                <li><a href="#">Предложить жилье</a></li>
+                                <li class="active"><a href="#">Поиск гида</a></li>
+                                <li><a href="#">Найти попутчика</a></li>
+                                <li><a href="#">Найти занятие</a></li>
+                            </ul>
+                            <div class="route-menu-report"><a href="#">Написать отчет</a></div>
+                        </div>
+                        <!-- route menu END -->
+
+                        <!-- route container -->
+                        <div class="route-container">
+
+                            <div class="route-menu-inner">
+                                <ul>
+                                    <li class="active"><a href="#">Предложения</a></li>
+                                    <li><a href="#">Мои запросы</a></li>
+                                    <li><a href="#">Мои маршруты</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- route supply header -->
+                            <div class="route-supply-header">
+                                <div class="route-supply-header-title">
+                                    <div class="route-supply-header-title-text">В каталоге содержатся предложения гидов со всего мира</div>
+                                    <div class="route-supply-header-title-notice">Вы можете воспользоваться поиском предложений для максимального удобства!</div>
+                                </div>
+                                <div class="route-supply-header-form">
+                                    <form action="#" method="post">
+                                        <div class="route-supply-header-form-field-1">
+                                            <div class="route-supply-header-input"><input type="text" name="city" value="" placeholder="Введите город" /></div>
+                                        </div>
+                                        <div class="route-supply-header-form-field-2">
+                                            <div class="route-supply-header-input"><input type="text" name="info" value="" placeholder="Введите уточняющую информацию" /></div>
+                                        </div>
+                                        <div class="route-supply-header-form-field-3">
+                                            <div class="route-supply-header-input"><input type="text" name="type" value="" placeholder="Введите тип запроса" /></div>
+                                        </div>
+                                        <div class="route-supply-header-form-field-4">
+                                            <div class="route-supply-header-submit"><button type="submit">Найти</button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- route supply header END -->
+
+                            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDhqQJTnJ_7qmK9RIO9Y74GilsYwR0S47I"></script>
+
+                            <!-- route supply content -->
+                            <div class="route-supply-content">
+                                <div class="main-content">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><a href="ajax/marshrut_supply.html">Город <span class="thead-sort"><span class="up"></span><span class="down"></span></span></a></th>
+                                                <th><a href="ajax/marshrut_supply.html">Уточняющая информация <span class="thead-sort"><span class="up"></span><span class="down"></span></span></a></th>
+                                                <th><a href="ajax/marshrut_supply.html">Тип запроса <span class="thead-sort"><span class="up"></span><span class="down"></span></span></a></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-href="#">
+                                                <td>Москва</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                <td>Lorem ipsum dolor.</td>
+                                                <td class="main-author"><a href="#"><img src="files/main-author.jpg" alt="" />Иванов Иван</a></td>
+                                                <td class="main-view"><a href="ajax/marshrut-supply-view.html"></a></td>
+                                                <td class="main-btn"><a href="#">Откликнуться</a></td>
+                                            </tr>
+                                            <tr data-href="#">
+                                                <td>Москва</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                <td>Lorem ipsum dolor.</td>
+                                                <td class="main-author"><a href="#"><img src="files/main-author.jpg" alt="" />Иванов Иван</a></td>
+                                                <td class="main-view"><a href="ajax/marshrut-supply-view.html"></a></td>
+                                                <td class="main-btn"><a href="#">Откликнуться</a></td>
+                                            </tr>
+                                            <tr data-href="#">
+                                                <td>Москва</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                <td>Lorem ipsum dolor.</td>
+                                                <td class="main-author"><a href="#"><img src="files/main-author.jpg" alt="" />Иванов Иван</a></td>
+                                                <td class="main-view"><a href="ajax/marshrut-supply-view.html"></a></td>
+                                                <td class="main-btn"><a href="#">Откликнуться</a></td>
+                                            </tr>
+                                            <tr data-href="#">
+                                                <td>Москва</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                <td>Lorem ipsum dolor.</td>
+                                                <td class="main-author"><a href="#"><img src="files/main-author.jpg" alt="" />Иванов Иван</a></td>
+                                                <td class="main-view"><a href="ajax/marshrut-supply-view.html"></a></td>
+                                                <td class="main-btn"><a href="#">Откликнуться</a></td>
+                                            </tr>
+                                            <tr data-href="#">
+                                                <td>Москва</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                <td>Lorem ipsum dolor.</td>
+                                                <td class="main-author"><a href="#"><img src="files/main-author.jpg" alt="" />Иванов Иван</a></td>
+                                                <td class="main-view"><a href="ajax/marshrut-supply-view.html"></a></td>
+                                                <td class="main-btn"><a href="#">Откликнуться</a></td>
+                                            </tr>
+                                            <tr data-href="#">
+                                                <td>Москва</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                <td>Lorem ipsum dolor.</td>
+                                                <td class="main-author"><a href="#"><img src="files/main-author.jpg" alt="" />Иванов Иван</a></td>
+                                                <td class="main-view"><a href="ajax/marshrut-supply-view.html"></a></td>
+                                                <td class="main-btn"><a href="#">Откликнуться</a></td>
+                                            </tr>
+                                            <tr data-href="#">
+                                                <td>Москва</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                <td>Lorem ipsum dolor.</td>
+                                                <td class="main-author"><a href="#"><img src="files/main-author.jpg" alt="" />Иванов Иван</a></td>
+                                                <td class="main-view"><a href="ajax/marshrut-supply-view.html"></a></td>
+                                                <td class="main-btn"><a href="#">Откликнуться</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- route supply content END -->
+
+                        </div>
+                        <!-- route container END -->
+
+                    </div>
+                </div>
+                <!-- route content END -->
+
+            </div>
+            <!-- route END -->
+
+            <!-- mobile -->
+            <div class="mobile">
+                <div class="container">
+                    <div class="mobile-link"><a href="#">Перейти к мобильной версии</a></div>
+                    <div class="mobile-app">Скачайте мобильное приложение в <a href="#"><img src="images/mobile-app-googleplay.png" alt="" /> Google Play</a> и <a href="#"><img src="images/mobile-app-appstore.png" alt="" /> Appstore</a></div>
+                </div>
+            </div>
+            <!-- mobile END -->
+
+            <footer>
+                <div class="container">
+
+                    <!-- footer top -->
+                    <div class="footer-top">
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Инструменты</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Что посмотреть?</a></li>
+                                    <li><a href="#">С кем поехать?</a></li>
+                                    <li><a href="#">Где пожить?</a></li>
+                                    <li><a href="#">Поиск гида</a></li>
+                                    <li><a href="#">На машине</a></li>
+                                    <li><a href="#">Авиа (auz)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Компания</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Помощь</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Как это работает?</a></li>
+                                    <li><a href="#">Ответы на вопросы</a></li>
+                                    <li><a href="#">Служба поддержки</a></li>
+                                    <li><a href="#">Политика конфиденциальности </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Скачать приложение</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Для Android</a></li>
+                                    <li><a href="#">Для iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer-right">
+                            <div class="footer-right-title">Присоединяйтесь к нам</div>
+                            <div class="footer-social">
+                                <a href="#" target="_blank"><img src="images/footer-social-fb.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-tw.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-yt.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-rs.png" alt="" /></a>
+                            </div>
+                            <div class="footer-payment">
+                                <img src="images/footer-payment-visa.png" alt="" />
+                                <img src="images/footer-payment-mastercard.png" alt="" />
+                                <img src="images/footer-payment-mir.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer top END -->
+
+                    <!-- footer bottom -->
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-copyrights">© ООО “Название” 2018.<br /> ИНН 3486739687 ОГРН 1220698346346<br /> 105000 г. Москва, ул. Московская, д. 83</div>
+                        <div class="footer-bottom-info">Вся информация на сайте носит сугубо информационный <br /> характер и не является публичной офертой или рекламой.<br /> Все права защищены © 2018.</div>
+                        <div class="footer-bottom-developer">Дизайн разработан комнадой <a href="#" target="_blank">Web-Marketing</a>.</div>
+                    </div>
+                    <!-- footer bottom END -->
+
+                </div>
+            </footer>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

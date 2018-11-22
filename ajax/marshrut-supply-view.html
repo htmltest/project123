@@ -1,0 +1,38 @@
+<div class="marshrut-supply-view-content">
+    <div class="marshrut-supply-view-map">
+        <div class="marshrut-supply-view-map-content" id="map-canvas"></div>
+        <script>
+            var mapOptions = {
+                zoom: 11,
+                scrollwheel: false,
+                mapTypeControl: false,
+                streetViewControl: false
+            }
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var directionsDisplay = new google.maps.DirectionsRenderer();
+            var directionsService = new google.maps.DirectionsService();
+
+            var request = {
+                origin: 'Москва',
+                destination: 'Санкт-Петербург',
+                travelMode: google.maps.DirectionsTravelMode.TRANSIT
+            };
+
+            directionsDisplay.set('directions', null);
+            directionsService.route(request, function(response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(response);
+                }
+            });
+
+            directionsDisplay.setMap(map);
+        </script>
+    </div>
+    <div class="marshrut-supply-view-text">
+        <div class="marshrut-supply-view-title">Москва - Санкт-Петербург</div>
+        <div class="marshrut-supply-view-title">Дата отправления</div>
+        <div class="marshrut-supply-view-descr">Lorem ipsum dolor sit amet, consectetu r adipiscing elit. Сonsectetur adipiscing elit sut amet ipsum dolor sit amet, Sut amet ipsum dolor sit amet,</div>
+        <div class="marshrut-supply-view-title">Lorem ipsum dolor.</div>
+    </div>
+</div>

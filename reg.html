@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Найдите подходящий маршрут</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+
+        <meta name="viewport" content="width=1200" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- registration -->
+            <div class="registration" style="background-image:url(images/registration.jpg)">
+                <div class="container">
+
+                    <!-- registration left -->
+                    <div class="registration-left">
+                        <div class="registration-menu">
+                            <div class="registration-menu-title">Регистрация нового пользователя</div>
+                            <div class="registration-menu-link"><a href="windows/login.html" class="window-link">У меня уже есть аккаунт</a></div>
+                        </div>
+                        <div class="registration-form">
+                            <form action="#" method="post">
+                                <div class="registration-subtitle">Выберите подходящий аккаунт</div>
+                                <div class="registration-type">
+                                    <label><input type="radio" name="type" value="1" checked="checked" /><span><em class="registration-type-1"></em>Я гид, ищу путешественников</span></label>
+                                    <label><input type="radio" name="type" value="2" /><span><em class="registration-type-2"></em>Я путешественник, ищу гида</span></label>
+                                </div>
+                                <div class="registration-type-descr">
+                                    <div class="registration-type-descr-item">Здесь будет находится информация о выбранном пользователем аккаунте. Небольшой абзац, для того чтобы пользователь прекрасно понимал все тонкости вашей работы и уверенно пользовался вашим сервисом.</div>
+                                    <div class="registration-type-descr-item">Выбран акканут путешественника</div>
+                                </div>
+
+                                <div class="registration-main">
+                                    <div class="registration-subtitle">Заполните основную информацию</div>
+                                    <div class="registration-row">
+                                        <div class="registration-field-1">
+                                            <div class="registration-field-1-1">
+                                                <div class="registration-label">Имя <span>*</span></div>
+                                                <div class="registration-input"><input type="text" name="firstname" value="" class="required" /></div>
+                                            </div>
+                                            <div class="registration-field-1-2">
+                                                <div class="registration-label">Фамилия <span>*</span></div>
+                                                <div class="registration-input"><input type="text" name="lastname" value="" class="required" /></div>
+                                            </div>
+                                            <div class="registration-hint">Имя и фамилия должны быть настоящими!</div>
+                                        </div>
+                                        <div class="registration-field-2">
+                                            <div class="registration-label">Ваш пол <span>*</span></div>
+                                            <div class="registration-radio"><label><input type="radio" name="gender" value="m" checked="checked" /><span>муж</span></label></div>
+                                            <div class="registration-radio"><label><input type="radio" name="gender" value="f" /><span>жен</span></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="registration-row">
+                                        <div class="registration-field-3">
+                                            <div class="registration-label">Номер телефона <span>*</span></div>
+                                            <div class="registration-input"><input type="text" name="phone" value="" class="required phoneRU" /></div>
+                                            <div class="registration-hint">Наример, 7 (XXX) XXX-XX-XX</div>
+                                        </div>
+                                        <div class="registration-field-3">
+                                            <div class="registration-label">Почта <span>*</span></div>
+                                            <div class="registration-input"><input type="text" name="email" value="" class="required email" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="registration-row">
+                                        <div class="registration-field-3">
+                                            <div class="registration-label">Пароль <span>*</span></div>
+                                            <div class="registration-input"><input type="password" name="password" id="password" value="" class="required" /></div>
+                                            <div class="registration-hint">Сложность: <span class="registration-hint-complexity"></span></div>
+                                        </div>
+                                        <div class="registration-field-3">
+                                            <div class="registration-label">Повторите пароль <span>*</span></div>
+                                            <div class="registration-input"><input type="password" name="repassword" value="" equalTo="#password" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="registration-password-notice">Для обеспечения наилучшей безопасности рекомендуем использовать при написании пароля не менее 6-ти символов с использованием латинских букв (A-Z) и чисел (0-9), а так же регистра и символов (\/_-.)</div>
+                                </div>
+                                <div class="registration-checkbox"><label><input type="checkbox" name="confirm" checked="checked" class="required" /><span>Я принимаю условия <a href="#">пользовательского соглашения</a></span></label></div>
+                                <div class="registration-submit"><input type="submit" value="Зарегистрироваться" /></div>
+                                <div class="registration-social">
+                                    Войти через:&nbsp;
+                                    <a href="#"><img src="images/window-login-vk.png" alt="" /></a>
+                                    <a href="#"><img src="images/window-login-facebook.png" alt="" /></a>
+                                    <a href="#"><img src="images/window-login-telegram.png" alt="" /></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- registration left END -->
+
+                    <!-- registration right -->
+                    <div class="registration-right">
+                        <div class="registration-logo"><img src="images/logo-text.png" alt="" /></div>
+                        <div class="registration-title">Lorem ipsum dolor sit amet</div>
+                        <div class="registration-text">Сonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                    <!-- registration right END -->
+
+                </div>
+            </div>
+            <!-- registration END -->
+
+            <!-- mobile -->
+            <div class="mobile">
+                <div class="container">
+                    <div class="mobile-link"><a href="#">Перейти к мобильной версии</a></div>
+                    <div class="mobile-app">Скачайте мобильное приложение в <a href="#"><img src="images/mobile-app-googleplay.png" alt="" /> Google Play</a> и <a href="#"><img src="images/mobile-app-appstore.png" alt="" /> Appstore</a></div>
+                </div>
+            </div>
+            <!-- mobile END -->
+
+            <footer>
+                <div class="container">
+
+                    <!-- footer top -->
+                    <div class="footer-top">
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Инструменты</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Что посмотреть?</a></li>
+                                    <li><a href="#">С кем поехать?</a></li>
+                                    <li><a href="#">Где пожить?</a></li>
+                                    <li><a href="#">Поиск гида</a></li>
+                                    <li><a href="#">На машине</a></li>
+                                    <li><a href="#">Авиа (auz)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Компания</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Помощь</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Как это работает?</a></li>
+                                    <li><a href="#">Ответы на вопросы</a></li>
+                                    <li><a href="#">Служба поддержки</a></li>
+                                    <li><a href="#">Политика конфиденциальности </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-title">Скачать приложение</div>
+                            <div class="footer-menu-list">
+                                <ul>
+                                    <li><a href="#">Для Android</a></li>
+                                    <li><a href="#">Для iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer-right">
+                            <div class="footer-right-title">Присоединяйтесь к нам</div>
+                            <div class="footer-social">
+                                <a href="#" target="_blank"><img src="images/footer-social-fb.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-tw.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-yt.png" alt="" /></a>
+                                <a href="#" target="_blank"><img src="images/footer-social-rs.png" alt="" /></a>
+                            </div>
+                            <div class="footer-payment">
+                                <img src="images/footer-payment-visa.png" alt="" />
+                                <img src="images/footer-payment-mastercard.png" alt="" />
+                                <img src="images/footer-payment-mir.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer top END -->
+
+                    <!-- footer bottom -->
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-copyrights">© ООО “Название” 2018.<br /> ИНН 3486739687 ОГРН 1220698346346<br /> 105000 г. Москва, ул. Московская, д. 83</div>
+                        <div class="footer-bottom-info">Вся информация на сайте носит сугубо информационный <br /> характер и не является публичной офертой или рекламой.<br /> Все права защищены © 2018.</div>
+                        <div class="footer-bottom-developer">Дизайн разработан комнадой <a href="#" target="_blank">Web-Marketing</a>.</div>
+                    </div>
+                    <!-- footer bottom END -->
+
+                </div>
+            </footer>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>
