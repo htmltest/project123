@@ -130,6 +130,12 @@ $(document).ready(function() {
         dateFormat: dateFormat
     });
 
+    $('.main-header').on('mousewheel', function(event) {
+        if (event.deltaY < 0) {
+            $('html, body').animate({'scrollTop': $('.main-header').height()});
+        }
+    });
+
 });
 
 function initForm(curForm) {
@@ -247,3 +253,13 @@ function checkPassword(password) {
     }
     $('.registration-hint-complexity').html(text);
 }
+
+$(window).on('load resize scroll', function() {
+    if ($('.main-header-menu').length > 0) {
+        if ($(window).scrollTop() > $('.main-header').height() - $('.main-header-menu').height()) {
+            $('.main-header-menu').addClass('fixed');
+        } else {
+            $('.main-header-menu').removeClass('fixed');
+        }
+    }
+});
